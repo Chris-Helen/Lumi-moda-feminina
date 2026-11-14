@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Chris Helen" />
+    <meta name="keywords" content="html, web, loja de roupa, moda feminina" />
+    <meta name="description" content="Projeto final de desenvolvimento Front-End" />
+    <title>Lumi - Moda Feminina</title>
+
+    <link rel="stylesheet" href="../css/produto_individual.css">
+</head>
+
+<body>
+    <!-- Logo -->
+    <header id="header">
+        <img src="../img/logo_completa.png" alt="Logo LUMI" width="200">
+        <a href="carrinho.html" id="icone_carrinho">🛍️</a>
+    </header>
+
+    <!-- Menu de páginas -->
+    <aside id="menu">
+        <ul>
+            <li><a href="novidades.html">Novidades</a></li><br>
+            <li><a href="vestidos.html">Vestidos</a></li><br>
+            <li><a href="blusas.html">Blusas</a></li><br>
+            <li><a href="calcas.html">Calças</a></li><br>
+            <li><a href="saias.html">Saias</a></li><br>
+        </ul>
+    </aside>
+
+    <!-- Conteúdo da página -->
+    <main id="main">
+        <div id="detalhes"> <!-- Organiza a imagem e as informações em duas colunas -->
+            <!-- Imagem do produto -->
+            <section>
+                <img id="imagem" src="../img/vestido_6.png" alt="Vestido midi preto com decote em V envelope com mangas longas bufantes e faixa de amarrar na cintura">
+            </section>
+
+            <!-- Informações do produto -->
+            <section>
+                <div id="informacoes">
+                    <h2>Vestido midi preto envelope</h2>
+
+                    <div id="avaliacao">
+                        <div id="estrelas">
+                            <span>★★★★★</span>
+                        </div>
+
+                        <div id="quantidade">
+                            <span>(3.100)</span>
+                        </div>
+                    </div>
+
+                    <div id="preco">
+                        <p>R$ 200,90</p>
+                    </div>
+
+                    <div id="descricao">
+                        <p>Vestido midi preto com decote em V envelope com mangas longas bufantes e faixa de amarrar na
+                            cintura</p>
+                    </div>
+
+                    <h3>Tamanho:</h3>
+
+                    <div id="tamanhos">
+                        <button class="tamanho">PP</button>
+                        <button class="tamanho">P</button>
+                        <button class="tamanho">M</button>
+                        <button class="tamanho">G</button>
+                        <button class="tamanho">GG</button>
+                    </div>
+
+                    <button id="carrinho">Adicionar ao carrinho</button>
+                </div>
+            </section>
+
+        </div>
+        <!-- Fim das informações do produto -->
+    </main>
+
+    <!-- Coluna rosa decorativa do lado direito -->
+    <aside id="coluna_direita"></aside>
+
+    <!-- Final da página -->
+    <footer id="footer">
+        <small>&copy; 2026 LUMI - Moda Feminina</small>
+    </footer>
+</body>
+
+</html>

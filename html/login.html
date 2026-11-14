@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Chris Helen" />
+    <meta name="keywords" content="html, web, loja de roupa, moda feminina" />
+    <meta name="description" content="Projeto final de desenvolvimento Front-End" />
+    <title>Lumi - Moda Feminina</title>
+
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+
+<body>
+    <main id="main"> <!-- Área que centraliza a tela de login -->
+
+        <div id="caixa_login"> <!-- Caixa branca que tem as duas colunas -->
+
+            <!-- Lado esquerdo -->
+            <section id="painel_rosa">
+                <img src="../img/logo_branca.png" alt="Logo LUMI" width="220">
+                <br><br>
+
+                <h2>Entre na sua conta e viva uma experiência de moda ainda mais especial.</h2>
+                <br><br>
+
+                <p>♡ Receba ofertas exclusivas</p>
+                <p>♡ Fique por dentro das novidades</p>
+            </section>
+            <!-- Fim do lado esquerdo -->
+
+            <!-- Lado direito -->
+            <section id="area_login"> <!-- Área com os campos de e-mail e senha -->
+                <h1>Bem-vinda de volta!</h1>
+
+                <p id="descricao_login">Preencha seus dados para fazer login na LUMI.</p>
+
+                <!-- Formulário de login -->
+                <form>
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu e-mail" autocomplete="email" required>
+
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" name="senha" placeholder="Digite sua senha" minlength="8" autocomplete="current-password" required>
+                </form>
+                <!-- Fim do formulário -->
+
+                <a href="inicio.html" id="botao_entrar">Entrar</a>
+                <p id="link_cadastro">Não possui uma conta?<a href="cadastro.html">Criar conta</a></p>
+            </section>
+            <!-- Fim do lado direito -->
+
+        </div>
+        <!-- Fim da caixa principal -->
+
+    </main>
+    <!-- Fim da área principal -->
+</body>
+
+</html>

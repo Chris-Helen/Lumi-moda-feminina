@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Chris Helen" />
+    <meta name="keywords" content="html, web, loja de roupa, moda feminina" />
+    <meta name="description" content="Projeto final de desenvolvimento Front-End" />
+    <title>Lumi - Moda Feminina</title>
+
+    <link rel="stylesheet" href="../css/carrinho.css">
+</head>
+
+<body>
+    <!-- Logo -->
+    <header id="header">
+        <img src="../img/logo_completa.png" alt="Logo LUMI" width="200">
+    </header>
+
+    <!-- Menu de páginas -->
+    <aside id="menu">
+        <ul>
+            <li><a href="novidades.html">Novidades</a></li><br>
+            <li><a href="vestidos.html">Vestidos</a></li><br>
+            <li><a href="blusas.html">Blusas</a></li><br>
+            <li><a href="calcas.html">Calças</a></li><br>
+            <li><a href="saias.html">Saias</a></li><br>
+        </ul>
+    </aside>
+
+    <!-- Conteúdo da página -->
+    <main id="main">
+        <h2>🛍️ Meu carrinho</h2>
+
+        <!-- Títulos das colunas -->
+        <div id="titulos">
+            <span>Produto</span>
+            <span>Quantidade</span>
+            <span>Preço</span>
+            <span>Subtotal</span>
+        </div>
+
+        <!-- Produto 1 -->
+        <div class="produto">
+            <div class="informacoes">
+                <img src="../img/vestido_1.png" alt="Vestido Midi Elegante">
+
+                <div>
+                    <h4>Vestido midi vermelho marsala de alças finas</h4>
+                    <p>Tamanho: M</p>
+                </div>
+            </div>
+
+            <div class="quantidade">
+                <button type="button">-</button>
+                <span>2</span>
+                <button type="button">+</button>
+            </div>
+
+            <p>R$ 115,50</p> <!-- Preço unidade -->
+            <p>R$ 231,00</p> <!-- Subtotal -->
+
+            <button type="button" class="remover">🗑️</button>
+        </div>
+
+        <!-- Produto 2 -->
+        <div class="produto">
+            <div class="informacoes">
+                <img src="../img/blusa_1.png" alt="Blusa Branca com Babado">
+
+                <div>
+                    <h4>Blusa Branca com Babado</h4>
+                    <p>Tamanho: P</p>
+                </div>
+            </div>
+
+            <div class="quantidade">
+                <button type="button">-</button>
+                <span>1</span>
+                <button type="button">+</button>
+            </div>
+
+            <p>R$ 79,90</p> <!-- Preço unidade -->
+            <p>R$ 79,90</p> <!-- Subtotal -->
+
+            <button type="button" class="remover">🗑️</button>
+        </div>
+
+        <!-- Produto 3 -->
+        <div class="produto">
+            <div class="informacoes">
+                <img src="../img/calca_1.png" alt="Calça Alfaiataria">
+
+                <div>
+                    <h4>Calça terracota pantalona</h4>
+                    <p>Tamanho: G</p>
+                </div>
+            </div>
+
+            <div class="quantidade">
+                <button type="button">-</button>
+                <span>1</span>
+                <button type="button">+</button>
+            </div>
+
+            <p>R$ 110,90</p> <!-- Preço unidade -->
+            <p>R$ 110,90</p> <!-- Subtotal -->
+
+            <button type="button" class="remover">🗑️</button>
+        </div>
+
+        <!-- Parte inferior do carrinho -->
+        <div id="final_carrinho"> <!-- Agrupa o link de voltar e o resumo -->
+            <a href="novidades.html" id="continuar">← Continuar comprando</a>
+
+            <!-- Resumo do pedido -->
+            <div id="resumo">
+                <h3>Resumo do pedido</h3>
+
+                <div class="linha_resumo">
+                    <span>Subtotal</span>
+                    <span>R$ 421,80</span>
+                </div>
+
+                <div class="linha_resumo">
+                    <span>Frete</span>
+                    <span id="frete">Grátis</span>
+                </div>
+
+                <div id="total">
+                    <strong>Total</strong>
+                    <strong>R$ 421,80</strong>
+                </div>
+
+                <a href="pagamento.html" id="finalizar">Finalizar compra</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Final da página -->
+    <footer id="footer">
+        <small>&copy; 2026 LUMI - Moda Feminina</small>
+    </footer>
+</body>
+
+</html>

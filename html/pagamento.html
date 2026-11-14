@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Chris Helen" />
+    <meta name="keywords" content="html, web, loja de roupa, moda feminina" />
+    <meta name="description" content="Projeto final de desenvolvimento Front-End" />
+    <title>Lumi - Moda Feminina</title>
+
+    <link rel="stylesheet" href="../css/pagamento.css">
+</head>
+
+<body>
+    <!-- Logo -->
+    <header id="header">
+        <img src="../img/logo_completa.png" alt="Logo LUMI" width="200">
+        <a href="carrinho.html" id="icone_carrinho">🛍️</a>
+    </header>
+
+    <!-- Menu de páginas -->
+    <aside id="menu">
+        <ul>
+            <li><a href="novidades.html">Novidades</a></li><br>
+            <li><a href="vestidos.html">Vestidos</a></li><br>
+            <li><a href="blusas.html">Blusas</a></li><br>
+            <li><a href="calcas.html">Calças</a></li><br>
+            <li><a href="saias.html">Saias</a></li><br>
+        </ul>
+    </aside>
+
+    <!-- Conteúdo principal -->
+    <main id="main">
+        <h1>💳 Pagamento</h1>
+
+        <div id="area_pagamento"> <!-- Organiza o formulário e o resumo lado a lado -->
+            <!-- Dados e pagamento -->
+            <section id="dados_pagamento">
+                <h2>Dados para entrega</h2>
+
+                <form>
+                    <label for="nome">Nome completo</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo">
+
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu e-mail">
+
+                    <label for="endereco">Endereço</label>
+                    <input type="text" id="endereco" name="endereco" placeholder="Rua, avenida, número">
+
+                    <label for="cidade">Cidade</label>
+                    <input type="text" id="cidade" name="cidade" placeholder="Digite sua cidade">
+
+                    <label for="cep">CEP</label>
+                    <input type="text" id="cep" name="cep" placeholder="00000-000">
+
+                    <h2>Forma de pagamento</h2>
+
+                    <div class="opcao_pagamento">
+                        <input type="radio" name="pagamento" id="pix" value="pix">
+                        <label for="pix">PIX</label>
+                    </div>
+
+                    <div class="opcao_pagamento">
+                        <input type="radio" name="pagamento" id="cartao" value="cartao">
+                        <label for="cartao">Cartão de crédito</label>
+                    </div>
+
+                    <div class="opcao_pagamento">
+                        <input type="radio" name="pagamento" id="boleto" value="boleto">
+                        <label for="boleto">Boleto bancário</label>
+                    </div>
+                </form>
+            </section>
+
+            <!-- Resumo do pedido -->
+            <section id="resumo">
+                <h3>Resumo do pedido</h3>
+
+                <!-- Produto 1 -->
+                <div class="linha_resumo">
+                    <span>Vestido midi vermelho marsala de alças finas</span>
+                    <span>R$ 231,00</span>
+                </div>
+
+                <!-- Produto 2 -->
+                <div class="linha_resumo">
+                    <span>Blusa Branca com Babado</span>
+                    <span>R$ 79,90</span>
+                </div>
+
+                <!-- Produto 3 -->
+                <div class="linha_resumo">
+                    <span>Calça terracota pantalona</span>
+                    <span>R$ 110,90</span>
+                </div>
+
+                <div class="linha_resumo">
+                    <span>Subtotal</span>
+                    <span>R$ 421,80</span>
+                </div>
+
+                <div class="linha_resumo">
+                    <span>Frete</span>
+                    <span id="frete">Grátis</span>
+                </div>
+
+                <div id="total">
+                    <span>Total</span>
+                    <span>R$ 421,80</span>
+                </div>
+
+                <a href="pagamento_realizado.html" id="finalizar">Confirmar pagamento</a>
+            </section>
+
+        </div>
+        <!-- Fim da área de pagamento -->
+    </main>
+
+    <!-- Final da página -->
+    <footer id="footer">
+        <small>&copy; 2026 LUMI - Moda Feminina</small>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Chris Helen" />
+    <meta name="keywords" content="html, web, loja de roupa, moda feminina" />
+    <meta name="description" content="Projeto final de desenvolvimento Front-End" />
+    <title>Lumi - Moda Feminina</title>
+
+    <link rel="stylesheet" href="../css/cadastro.css">
+</head>
+
+<body>
+    <main id="main"> <!-- Área que centraliza a tela de cadastro -->
+
+        <div id="caixa_cadastro"> <!-- Caixa branca que tem as duas colunas -->
+
+            <!-- Lado esquerdo -->
+            <section id="painel_rosa">
+                <img src="../img/logo_branca.png" alt="Logo LUMI" width="220">
+                <br><br>
+
+                <h2>Crie sua conta e descubra uma experiência de moda ainda mais especial.</h2>
+                <br><br>
+
+                <p>♡ Receba ofertas exclusivas</p>
+                <p>♡ Fique por dentro das novidades</p>
+            </section>
+            <!-- Fim do lado esquerdo -->
+
+            <!-- Lado direito -->
+            <section id="area_cadastro">
+                <h1>Crie sua conta!</h1>
+                <p id="descricao_cadastro">Preencha seus dados para se cadastrar na LUMI.</p>
+                
+                <!-- Início do formulário -->
+                <form>
+                    <label for="nome">Nome completo</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" autocomplete="name" required>
+
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu e-mail" autocomplete="email" required>
+
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" autocomplete="tel">
+
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" name="senha" placeholder="Crie uma senha" minlength="8" autocomplete="new-password" required>
+
+                    <label for="confirmar_senha">Confirmar senha</label>
+                    <input type="password" id="confirmar_senha" name="confirmar" placeholder="Digite sua senha novamente" minlength="8" autocomplete="new-password" required>
+
+                    <!-- Agrupa a caixa de seleção e o texto -->
+                    <div id="aceite_termos">                       
+                        <input type="checkbox" id="aceite" name="aceite" required>
+                        <label for="aceite">Li e aceito os Termos de Uso e a Política de Privacidade.</label>
+                    </div>
+                    <!-- Fim da área dos termos -->
+                    <br>
+                </form>
+                <!-- Fim do formulário -->
+
+                <a href="inicio.html" id="botao_criar_conta">Criar conta</a>
+                <p id="link_login">Já possui uma conta?<a href="login.html">Entrar</a></p>
+            </section>
+            <!-- Fim do lado direito -->
+
+        </div>
+        <!-- Fim da caixa principal -->
+
+    </main>
+    <!-- Fim da área principal -->
+</body>
+
+</html>
