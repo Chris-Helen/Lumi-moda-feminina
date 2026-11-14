@@ -1,0 +1,147 @@
+/* Configuração geral da página */
+body {
+    margin: 0;
+    background-color: #F7DCDC;
+}
+
+/* Conteúdo principal */
+#main {
+    display: flex; /* Organiza o conteúdo */
+    justify-content: center; /* Centraliza a caixa horizontalmente */
+    align-items: center; /* Centraliza a caixa verticalmente */
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box; /* Organiza o layout impedindo que o padding e a border aumentem as dimensões */
+}
+
+/* Caixa principal do cadastro */
+#caixa_cadastro {
+    display: grid; /* Organiza os elementos em colunas */
+    grid-template-columns: 40% 60%; /* Divide a caixa em duas colunas */
+    width: 950px;
+    max-width: 100%;
+    background-color: white;
+    padding: 12px;
+    border-radius: 12px; /* Arredonda os cantos da caixa */
+    box-sizing: border-box; /* Organiza o layout impedindo que o padding e a border aumentem as dimensões */
+}
+
+/* Painel rosa esquerdo */
+#painel_rosa {
+    background-color: #CC7C8A;
+    color: white;
+    padding: 35px;
+    border-radius: 10px; /* Arredonda os cantos */
+    text-align: center;
+}
+
+/* Logo do painel rosa */
+#painel_rosa img {
+    max-width: 100%;
+    height: auto; /* Mantém a proporção original da imagem */
+    margin-bottom: 40px;
+}
+
+/* Texto principal do painel rosa */
+#painel_rosa h2 {
+    font-size: 25px;
+    font-weight: normal;
+    line-height: 1.5;
+    margin-bottom: 40px;
+}
+
+/* Benefícios apresentados no painel */
+#painel_rosa p {
+    text-align: left;
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+/* Área direita do cadastro */
+#area_cadastro {
+    padding: 30px 35px; /* Define o espaço interno vertical e horizontal */
+    min-width: 0;
+    box-sizing: border-box; /* Organiza o layout impedindo que o padding e a border aumentem as dimensões */
+}
+
+/* Título do formulário */
+#area_cadastro h1 {
+    font-size: 30px;
+    margin: 0 0 10px; /* Tira a margem superior e adiciona 10px abaixo */
+    color: black;
+}
+
+/* Descrição do cadastro */
+#descricao_cadastro {
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+/* Organização dos campos */
+#area_cadastro form {
+    display: flex; /* organização de cada campo */
+    flex-direction: column; /* Organiza os campos verticalmente */
+}
+
+/* Nomes dos campos */
+#area_cadastro form > label {
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+/* Campos de preenchimento */
+#area_cadastro form > input {
+    padding: 13px;
+    margin-bottom: 17px;
+    border: 1px solid #DDD; /* Define borda cinza de */
+    border-radius: 6px; /* Arredonda os cantos */
+    font-size: 14px;
+    box-sizing: border-box; /* Organiza o layout impedindo que o padding e a border aumentem as dimensões */
+    width: 100%;
+}
+
+/* Efeito contorno rosa */
+#area_cadastro form > input:focus {
+    outline: 2px solid #E04D68; /* Contorno rosa ao clicar no campo */
+}
+
+/* Botão Criar conta */
+#botao_criar_conta {
+    width: 100%;
+    background-color: #E04D68;
+    color: white;
+    border: none; /* Tira a borda padrão */
+    padding: 15px;
+    border-radius: 6px; /* Arredonda os cantos */
+    font-size: 20px;
+    cursor: pointer; /* Mostra o cursor de mão sobre o botão */
+    font-weight: bold;
+    display: block; /* Faz o botão ocupar sua própria linha */
+    box-sizing: border-box; /* Organiza o layout impedindo que o padding e a border aumentem as dimensões */
+    text-align: center;
+    text-decoration: none; /* Tira o sublinhado do link */
+}
+
+/* Texto para ir pro login */
+#link_login {
+    text-align: center;
+    font-size: 14px;
+    color: #777;
+    margin-top: 20px;
+}
+
+/* Link Entrar */
+#link_login a {
+    color: #E04D68; /* Define a cor rosa do link */
+    text-decoration: none; /* Tira o sublinhado do link */
+    font-weight: bold; /* Deixa o link em negrito */
+}
+
+/* Termos e condições */
+#aceite_termos {
+    color: #777;
+    font-size: 13px;
+    line-height: 1.5;
+}

@@ -1,0 +1,140 @@
+/* Configuração geral da página */
+body {
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+/* Cabeçalho da loja */
+#header {
+    background-color: #F7DCDC;
+    color: #E04D68;
+    padding: 1px;
+    text-align: center;
+    position: relative; /* Serve de referência para posicionar o carrinho */
+}
+
+/* Ícone da sacolinha de compras */
+#icone_carrinho {
+    position: absolute; /* Permite posicionar o ícone dentro do cabeçalho */
+    top: 20px; /* Coloca o ícone no topo */
+    right: 30px; /* Coloca o ícone na direita */
+    font-size: 25px;
+    text-decoration: none; /* Tira o sublinhado do link */
+}
+
+/* Menu de páginas */
+#menu {
+    float: left; /* Coloca a coluna na esquerda */
+    width: 20%;
+    height: 620px;
+    background-color: #FFF0F2;
+}
+
+#coluna_direita {
+    float: right; /* Coloca a coluna na direita */
+    width: 20%;
+    height: 620px;
+    background-color: #FFF0F2;
+}
+
+/* Conteúdo principal */
+#main {
+    float: left; /* Coloca o conteúdo do lado do menu */
+    width: 60%;
+    min-height: 550px;
+    padding: 20px;
+    box-sizing: border-box; /* Organiza o layout impedindo que o padding e a border aumentem as dimensões */
+}
+
+/* Rodapé da página */
+#footer {
+    background-color: #F7DCDC;
+    color: #E04D68;
+    padding: 7px;
+    text-align: center;
+    clear: both; /* Coloca o rodapé abaixo do menu flutuante */
+}
+
+/* Organização das duas partes */
+#detalhes {
+    display: grid; /* Organiza os elementos em colunas */
+    grid-template-columns: 450px 1fr; /* Define a coluna da imagem e a de informações */
+    gap: 20px; /* Define o espaço entre as colunas */
+    margin-top: 25px; /* Adiciona espaço acima dos detalhes */
+}
+
+/* Imagem do produto */
+#imagem {
+    background-color: #F7DCDC;
+    padding: 10px;
+    border-radius: 10px; /* Arredonda os cantos da imagem */
+    width: 350px;
+    max-width: 100%;
+    height: auto; /* Mantém a proporção original da fotografia */
+    box-sizing: border-box; /* Organiza o layout impedindo que o padding e a border aumentem as dimensões */
+}
+
+/* Avaliação */
+#avaliacao {
+    display: flex; /* Coloca as estrelas e a quantidade lado a lado */
+    align-items: center; /* Centraliza os elementos verticalmente */
+    gap: 5px; /* Cria distância entre eles */
+    margin-top: 8px;
+}
+
+/* Organização das estrelas */
+#estrelas {
+    color: #F5B301;
+    font-size: 18px;
+}
+
+/* Organização da quantidade */
+#quantidade {
+    color: #777;
+    font-size: 12px;
+}
+
+/* Preço */
+#preco {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+/* Descrição */
+#descricao {
+    color: #777;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Organização dos tamanhos */
+#tamanhos {
+    display: flex; /* Coloca os botões lado a lado */
+    gap: 10px; /* Cria distância entre eles */
+    flex-wrap: wrap; /* Permite quebrar a linha quando faltar espaço */
+}
+
+/* Botões dos tamanhos */
+.tamanho {
+    background-color: white;
+    border: 1px solid #DDD; /* Define a borda cinza */
+    border-radius: 5px; /* Arredonda os cantos */
+    padding: 10px 15px;
+    cursor: pointer; /* Mostra o cursor de mão sobre o botão */
+}
+
+/* Botão do carrinho */
+#carrinho {
+    display: block; /* Faz o botão ocupar sua própria linha */
+    width: 350px;
+    background-color: #E04D68;
+    color: white;
+    border: none; /* Remove a borda padrão */
+    padding: 14px;
+    border-radius: 6px; /* Arredonda os cantos */
+    margin-top: 25px;
+    cursor: pointer; /* Mostra o cursor de mão sobre o botão */
+    font-size: 15px;
+}

@@ -1,0 +1,100 @@
+/* Configuração geral da página */
+body {
+    max-width: 100%;
+    height:auto;
+    margin: 0;
+}
+
+#header {
+    background-color: #F7DCDC;
+    color: #E04D68;
+    padding: 1px;
+    text-align: center;
+    position: relative; /* Serve de referência para posicionar o carrinho */
+}
+
+#icone_carrinho {
+    position: absolute; /* Permite posicionar o ícone dentro do cabeçalho */
+    top: 20px; /* Coloca o ícone no topo */
+    right: 30px; /* Coloca o ícone na direita */
+    font-size: 25px;
+    text-decoration: none; /* Tira o sublinhado do link */
+}
+
+#menu {
+    float: left;
+    width: 20%;
+    height: 1040px;
+    background-color: #FFF0F2;
+}
+
+#main {
+    margin-left: 20%;
+    min-height: 450px;
+    padding: 20px;
+}
+
+#footer {
+    background-color: #F7DCDC;
+    color: #E04D68;
+    padding: 7px;
+    text-align: center;
+    clear: both; /* Coloca o rodapé abaixo do menu flutuante */
+}
+
+/* Organização dos produtos na página */
+#catalogo {
+    min-width: 0;
+}
+
+/* Organização geral dos produtos */
+#geral {
+    display: grid; /* Organiza os produtos */
+    grid-template-columns: repeat(4, 1fr); /* Cria quatro colunas iguais */
+    gap: 20px; /* Define a distância entre os produtos */
+    margin-top: 25px;
+}
+
+/* Organização de cada produto */
+.produto {
+    background-color: #F7DCDC;
+    padding: 10px;
+    border-radius: 10px; /* Arredonda os cantos da caixa */
+    width: 220px;
+    box-sizing: border-box; /* Organiza o layout impedindo que o padding e a border aumentem as dimensões */
+}
+
+/* Organização do nome */
+.nome {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: black;
+    text-decoration: none; /* Tira o sublinhado do link */
+}
+
+/* Organização do preço */
+.preco {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+/* Organização geral da avaliação do produto */
+.avaliacao {
+    display: flex; /* Coloca as estrelas e a quantidade lado a lado */
+    align-items: center; /* Centraliza os elementos verticalmente */
+    gap: 5px; /* Cria distância entre eles */
+    margin-top: 8px;
+}
+
+/* Organização das estrelas */
+.estrelas {
+    color: #F5B301;
+    font-size: 18px;
+}
+
+/* Organização da quantidade */
+.quantidade {
+    color: #777;
+    font-size: 12px;
+}

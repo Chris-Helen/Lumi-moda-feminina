@@ -1,0 +1,191 @@
+/* Configuração geral da página */
+body {
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+/* Cabeçalho da loja */
+#header {
+    background-color: #F7DCDC;
+    color: #E04D68;
+    padding: 1px;
+    text-align: center;
+    position: relative; /* Serve de referência para posicionar o carrinho */
+}
+
+/* Menu de páginas */
+#menu {
+    float: left;
+    width: 20%;
+    height: 870px;
+    background-color: #FFF0F2;
+}
+
+/* Conteúdo principal */
+#main {
+    margin-left: 20%;
+    height: 830px;
+    padding: 20px;
+}
+
+/* Rodapé da página */
+#footer {
+    background-color: #F7DCDC;
+    color: #E04D68;
+    padding: 7px;
+    text-align: center;
+}
+
+/* Organização dos produtos */
+#titulos,
+.produto {
+    display: grid; /* Organiza os elementos em colunas */
+    grid-template-columns: 3fr 1.5fr 1fr 1fr 40px; /* Define as cinco colunas */
+    align-items: center; /* Centraliza os elementos verticalmente */
+    gap: 15px; /* Define a distância entre as colunas */
+}
+
+/* Cabeçalho da tabela */
+#titulos {
+    background-color: #FFF0F2;
+    padding: 15px;
+    border-radius: 8px; /* Arredonda os cantos */
+}
+
+/* Cada produto */
+.produto {
+    padding: 15px;
+    border-bottom: 1px solid #DDD; /* Cria linha cinza abaixo do produto */
+}
+
+/* Imagem e nome do produto */
+.informacoes {
+    display: flex; /* Coloca a imagem e as informações lado a lado */
+    align-items: center; /* Centraliza os elementos verticalmente */
+    gap: 15px; /* Define distância entre a imagem e o nome */
+    min-width: 0;
+}
+
+/* Imagem do produto */
+.informacoes img {
+    width: 65px;
+    height: 90px;
+    object-fit: contain; /* Mostra a imagem inteira sem cortes */
+    border-radius: 6px; /* Arredonda os cantos */
+}
+
+/* Nome do produto */
+.informacoes h4 {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Tamanho do produto */
+.informacoes p {
+    color: #777;
+    font-size: 12px;
+}
+
+/* Organização dos controles de quantidade */
+.quantidade {
+    display: flex; /* Organiza os controles lado a lado */
+    align-items: center; /* Centraliza verticalmente */
+    gap: 10px; /* Cria espaço entre os controles */
+}
+
+/* Botões de aumentar e diminuir */
+.quantidade button {
+    padding: 8px;
+    background-color: white;
+    border: 1px solid #DDD; /* Define a borda cinza */
+    border-radius: 5px; /* Arredonda os cantos */
+    cursor: pointer; /* Mostra o cursor de mão sobre o botão */
+}
+
+/* Remover produto */
+.remover {
+    border: none; /* Tira a borda padrão */
+    background: none; /* Tira o fundo padrão */
+    cursor: pointer; /* Mostra o cursor de mão sobre o botão */
+    font-size: 18px;
+}
+
+/* Organização da parte inferior */
+#final_carrinho {
+    display: flex; /* Organiza o conteúdo */
+    flex-direction: column; /* Coloca os elementos um abaixo do outro */
+    align-items: center; /* Centraliza os elementos horizontalmente */
+    gap: 15px; /* Cria espaço entre os elementos */
+    margin-top: 15px;
+}
+
+/* Continuar comprando */
+#continuar {
+    align-self: flex-start; /* Alinha somente esse link à esquerda */
+    color: #E04D68;
+    text-decoration: none; /* Tira o sublinhado do link */
+    font-size: 14px;
+}
+
+/* Resumo do pedido */
+#resumo {
+    width: 70%;
+    max-width: none;
+    background-color: #FFF0F2;
+    padding: 25px;
+    border: 2px solid #E04D68; /* Define a borda rosa */
+    border-radius: 12px; /* Arredonda os cantos */
+    box-sizing: border-box; /* Organiza o layout impedindo que o padding e a border aumentem as dimensões */
+    margin: 0 auto; /* Centraliza horizontalmente a caixa */
+}
+
+/* Título do resumo */
+#resumo h3 {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+/* Produtos e valores */
+.linha_resumo {
+    display: flex; /* Organiza os nomes e os preços lado a lado */
+    justify-content: space-between;/* Separa os textos nas extremidades */
+    margin-bottom: 15px;
+    gap: 15px; /* Cria distância entre eles */
+    font-size: 14px;
+}
+
+/* Destaque do frete */
+#frete {
+    color: #E04D68;
+    font-weight: bold;
+}
+
+/* Total */
+#total {
+    display: flex; /* Organiza o texto e o preço lado a lado */
+    justify-content: space-between; /* Separa os textos nas extremidades */
+    gap: 15px; /* Cria distância entre eles */
+    font-size: 22px;
+    border-top: 2px solid #E04D68; /* Define a borda rosa */
+    padding-top: 15px; /* Adiciona espaço acima do conteúdo */
+    margin-top: 20px;
+}
+
+/* Botão finalizar compra */
+#finalizar {
+    width: 100%;
+    background-color: #E04D68;
+    color: white;
+    border: none; /* Tira a borda padrão */
+    padding: 16px;
+    border-radius: 8px; /* Arredonda os cantos */
+    margin-top: 20px;
+    cursor: pointer; /* Mostra o cursor de mão sobre o botão */
+    font-size: 20px;
+    font-weight: bold;
+    display: block; /* Faz o botão ocupar sua própria linha */
+    box-sizing: border-box; /* Organiza o layout impedindo que o padding e a border aumentem as dimensões */
+    text-align: center;
+    text-decoration: none; /* Tira o sublinhado do link */
+}

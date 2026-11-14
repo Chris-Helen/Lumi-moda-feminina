@@ -1,0 +1,47 @@
+/* Configuração geral da página */
+body {
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+/* Cabeçalho da loja */
+#header {
+    background-color: #F7DCDC;
+    color: #E04D68;
+    padding: 1px;
+    text-align: center;
+    position: relative; /* Serve de referência para posicionar o carrinho */
+}
+
+/* Ícone da sacolinha de compras */
+#icone_carrinho {
+    position: absolute; /* Permite posicionar o ícone dentro do cabeçalho */
+    top: 20px; /* Coloca o ícone no topo */
+    right: 30px; /* Coloca o ícone na direita */
+    font-size: 25px;
+    text-decoration: none; /* Tira o sublinhado do link */
+}
+
+/* Menu de páginas */
+#menu {
+    float: left;
+    width: 20%;
+    height: 490px;
+    background-color: #FFF0F2;
+}
+
+/* Conteúdo principal */
+#main {
+    margin-left: 20%;
+    height: 450px;
+    padding: 20px;
+}
+
+/* Rodapé da página */
+#footer {
+    background-color: #F7DCDC;
+    color: #E04D68;
+    padding: 7px;
+    text-align: center;
+}

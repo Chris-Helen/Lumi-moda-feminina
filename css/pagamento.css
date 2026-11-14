@@ -1,0 +1,170 @@
+/* Configuração geral da página */
+body {
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+/* Cabeçalho da loja */
+#header {
+    background-color: #F7DCDC;
+    color: #E04D68;
+    padding: 1px;
+    text-align: center;
+    position: relative; /* Serve de referência para posicionar o carrinho */
+}
+
+/* Ícone da sacolinha de compras */
+#icone_carrinho {
+    position: absolute; /* Permite posicionar o ícone dentro do cabeçalho */
+    top: 20px; /* Coloca o ícone no topo */
+    right: 30px; /* Coloca o ícone na direita */
+    font-size: 25px;
+    text-decoration: none; /* Tira o sublinhado do link */
+}
+
+/* Menu de páginas */
+#menu {
+    float: left;
+    width: 20%;
+    height: 870px;
+    background-color: #FFF0F2;
+}
+
+#main {
+    margin-left: 20%;
+    height: 830px;
+    padding: 20px;
+}
+
+/* Rodapé da página */
+#footer {
+    background-color: #F7DCDC;
+    color: #E04D68;
+    padding: 7px;
+    text-align: center;
+}
+
+/* Organização da área de pagamento */
+#area_pagamento {
+    display: grid; /* Organiza o formulário e o resumo em colunas */
+    grid-template-columns: 1.5fr 1fr; /* Define a proporção das duas colunas */
+    gap: 30px; /* Cria distância entre as colunas */
+    margin-top: 25px;
+    align-items: start; /* Alinha as colunas pelo topo */
+}
+
+/* Caixa dos dados de entrega e pagamento */
+#dados_pagamento {
+    background-color: white;
+    padding: 25px;
+    border: 2px solid #E04D68; /* Define a borda rosa */
+    border-radius: 12px; /* Arredonda os cantos */
+    box-sizing: border-box; /* Organiza o layout impedindo que o padding e a border aumentem as dimensões */
+}
+
+/* Títulos do formulário */
+#dados_pagamento h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* Organização dos campos */
+#dados_pagamento form {
+    display: flex; /* Organização de cada campo */
+    flex-direction: column; /* Coloca os campos um abaixo do outro */
+}
+
+/* Nomes dos campos */
+#dados_pagamento label {
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Campos de preenchimento */
+#dados_pagamento input {
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #DDD; /* Define a borda cinza */
+    border-radius: 6px; /* Arredonda os cantos */
+    font-size: 14px;
+    box-sizing: border-box; /* Organiza o layout impedindo que o padding e a border aumentem as dimensões */
+}
+
+/* Efeito contorno rosa */
+#dados_pagamento form > input:focus {
+    outline: 2px solid #E04D68; /* Contorno rosa ao clicar no campo */
+}
+
+/* Organização das formas de pagamento */
+.opcao_pagamento {
+    display: flex; /* Coloca o botão e o texto lado a lado */
+    align-items: center; /* Alinha os elementos verticalmente */
+    gap: 10px; /* Cria distância entre eles */
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+/* Caixa do resumo do pedido */
+#resumo {
+    max-width: none;
+    background-color: #FFF0F2;
+    padding: 25px;
+    border: 2px solid #E04D68; /* Define a borda rosa */
+    border-radius: 12px; /* Arredonda os cantos */
+    box-sizing: border-box; /* Organiza o layout impedindo que o padding e a border aumentem as dimensões */
+}
+
+/* Título do resumo */
+#resumo h3 {
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-size: 24px;
+}
+
+/* Produtos e valores */
+.linha_resumo {
+    display: flex; /* Organiza nomes e preços lado a lado */
+    justify-content: space-between; /* Separa os textos nas extremidades */
+    gap: 20px; /* Cria distância entre eles */
+    margin-bottom: 18px;
+    font-size: 15px;
+}
+
+/* Destaque do frete */
+#frete {
+    color: #E04D68;
+    font-weight: bold;
+}
+
+/* Valor total do pedido */
+#total {
+    display: flex; /* Organiza o texto e o preço lado a lado */
+    justify-content: space-between; /* Separa os textos nas extremidades */
+    gap: 15px; /* Cria distância entre eles */
+    font-size: 22px;
+    border-top: 2px solid #E04D68; /* Cria a linha rosa acima do total */
+    padding-top: 15px; /* Adiciona espaço acima do conteúdo */
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Botão de confirmar pagamento */
+#finalizar {
+    width: 100%;
+    background-color: #E04D68;
+    color: white;
+    border: none; /* Tira a borda padrão */
+    padding: 16px;
+    border-radius: 8px; /* Arredonda os cantos */
+    margin-top: 25px;
+    cursor: pointer; /* Mostra o cursor de mão sobre o botão */
+    font-size: 18px;
+    font-weight: bold;
+    display: block; /* Faz o botão ocupar sua própria linha */
+    box-sizing: border-box; /* Organiza o layout impedindo que o padding e a border aumentem as dimensões */
+    text-align: center;
+    text-decoration: none; /* Tira o sublinhado do link */
+}
